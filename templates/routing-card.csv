@@ -1,0 +1,10 @@
+task_type,first_choice,fallback,escalate_when,human_gate,data_rule
+Brainstorm,,,,,
+PRD and requirements,,,,,
+Architecture and ADR,,,,,
+Spec and task breakdown,,,,,
+Implement,,,,,
+Code review,,,,,
+Security review,,,,,
+Debug,,,,,
+Docs and changelog,,,,,

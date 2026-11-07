@@ -1,0 +1,30 @@
+name: Correction
+description: A price, model name, flag, or claim is wrong or out of date.
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Where is it?
+      description: File and section, for example routing-kit/01-routing-card.md
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong or out of date?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Link to the official source
+    validations:
+      required: true
+  - type: input
+    id: checked
+    attributes:
+      label: Date you checked it (YYYY-MM-DD)
+    validations:
+      required: true

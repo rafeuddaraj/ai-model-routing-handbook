@@ -1,0 +1,7 @@
+date,task,phase,harness,model,tier,effort,why_this_choice,result,rework_minutes,escalated,escalation_reason,cost_usd,next_time
+2026-11-02,ILLUSTRATIVE: invitation PRD,prd,example-harness,example-model,fast,low,saving time,rejected,25,yes,acceptance criteria were vague,,Use Balanced tier and ask questions first
+2026-11-02,ILLUSTRATIVE: invitation PRD,prd,example-harness,example-model,balanced,medium,retry after escalation,accepted,5,no,,,Keep ask-first prompt
+2026-11-03,ILLUSTRATIVE: token storage ADR,architecture,example-harness,example-model,strong,high,high cost of error,accepted,10,no,,,Keep
+2026-11-04,ILLUSTRATIVE: token expiry logic,implement,example-harness,example-model,balanced,medium,clear spec,accepted_with_rework,20,no,,,Have a different model review time logic
+2026-11-04,ILLUSTRATIVE: token expiry logic review,review,example-harness,example-model-2,strong,high,different model from implementer,accepted,0,no,,,Keep
+2026-11-05,ILLUSTRATIVE: flaky test triage,debug,example-harness,example-model,fast,low,log triage first,accepted,0,no,,,Keep

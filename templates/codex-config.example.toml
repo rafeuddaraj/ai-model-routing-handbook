@@ -1,0 +1,33 @@
+# Example ~/.codex/config.toml
+# Based on the Codex configuration documentation as read on 2026-11-07
+# (developers.openai.com/codex/local-config and /codex/config-sample).
+# Model IDs are examples. Run /model in Codex or check the official docs for current IDs.
+# Some Codex versions may store profiles in separate files. If this layout does not
+# match your version, follow the current documentation and keep the same idea:
+# one named profile per tier.
+
+# Defaults (Balanced tier)
+model = "gpt-6.1-sol"
+model_reasoning_effort = "medium"
+plan_mode_reasoning_effort = "high"
+approval_policy = "on-request"
+
+# Fast tier: boilerplate, docs, log triage
+[profiles.fast]
+model = "gpt-6-luna"
+model_reasoning_effort = "low"
+
+# Balanced tier: everyday implementation
+[profiles.balanced]
+model = "gpt-6.1-sol"
+model_reasoning_effort = "medium"
+
+# Strong tier: architecture, security review, hard debugging
+[profiles.strong]
+model = "gpt-6-astra"
+model_reasoning_effort = "high"
+plan_mode_reasoning_effort = "xhigh"
+
+# Usage:
+#   codex --profile fast "Update the changelog for this diff"
+#   codex --profile strong "Review this design for failure modes"

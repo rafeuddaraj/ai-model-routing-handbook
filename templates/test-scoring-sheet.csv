@@ -1,0 +1,1 @@
+date,task_id,difficulty,harness,model,tier,effort,run,pass_objective_check,rework_minutes,input_tokens,output_tokens_incl_thinking,cost_usd,reviewer,notes
